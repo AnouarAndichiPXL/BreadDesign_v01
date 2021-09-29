@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #74a4c5;
+}
+
+.slider {
+  height: 100vh;
+}
+/* =============== NAVBAR START =============== */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin: 20px 10px;
+  padding: 10px;
+}
+.nav-items li a:hover {
+  border-bottom: 1px solid #f1f4f500;
+}
+.nav-logo {
+  margin-top: 5px !important;
+}
+.nav-items .logo {
+  font-family: "Norican", cursive;
+  font-size: 40px;
+  border-bottom: none;
+}
+.nav-items li a {
+  font-family: "Montserrat", sans-serif;
+  color: #f1f4f5;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f1f4f5;
+}
+
+/* =============== NAVBAR END =============== */
+
+/* =============== SLIDER START =============== */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider img {
+  width: 50vw;
+}
+
+.slider .HeroText,
+.slider .HeroText2 {
+  font-size: 160px;
+  color: #f1f4f5;
+  font-family: "Norican", cursive;
+  position: absolute;
+  margin-bottom: 150px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.HeroText2 {
+  margin-top: 350px;
+}
+/* =============== SLIDER END =============== */
+
+/* =============== REVIEWS START =============== */
+
+.reviews {
+  background-color: #f1f4f5;
+  height: 100vh;
+  width: 100%;
+}
+.textBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0px 0px 0px;
+}
+.textBlock h1 {
+  font-family: "Norican", cursive;
+  font-size: 50px;
+}
+
+.textBlock h4 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.reviews .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.reviews .cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 25%;
+  margin: 0 50px;
+}
+
+.reviews .cards .card img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 50px 0px;
+}
+
+.reviews .cards .card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.reviews .cards .card p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* =============== REVIEWS END =============== */
+
+/* =============== ABOUT START =============== */
+.about {
+  height: 50vh;
+  position: relative;
+  display: flex;
+}
+
+.about img {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}
+.left-side {
+  width: 50vw;
+}
+.about .left-side-text {
+  float: right;
+  width: 50%;
+  margin: 100px 0px 0px 100px;
+  z-index: 99;
+}
+
+.about .left-side-text h1 {
+  margin-bottom: 20px;
+  font-size: 46px;
+  color: #f1f4f5;
+  font-family: "Norican", cursive;
+}
+.about .left-side-text h4 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+  color: #f1f4f5;
+  font-weight: 300;
+}
+.about .left-side-text button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #f1f4f5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+}
+.about .left-side-text button:hover {
+  background-color: #d6d7d8;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.right-side .marketing,
+.right-side .photography,
+.right-side .development {
+  width: 70%;
+  padding: 20px;
+}
+
+#markt .bigDiv,
+#photo .bigDiv,
+#dev .bigDiv {
+  background-color: #454e5334;
+  height: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#markt .bigDiv .percentage {
+  background-color: #f1f4f5b9;
+  height: 100%;
+  width: 60%;
+}
+#photo .bigDiv .percentage {
+  background-color: #f1f4f5b9;
+  height: 100%;
+  width: 56%;
+}
+#dev .bigDiv .percentage {
+  background-color: #f1f4f5b9;
+  height: 100%;
+  width: 82%;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  color: #f1f4f5b9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+/* =============== ABOUT END =============== */
+
+/* =============== PRODUCTS START =============== */
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f4f5;
+  text-align: center;
+}
+
+.category .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.category .title h1 {
+  color: #2c2c2c;
+  font-family: "Norican", cursive;
+  font-size: 56px;
+  text-shadow: #2c2c2c83 1px 1px 30px;
+}
+.category .title h4 {
+  color: #2c2c2c;
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .product {
+  width: 25%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+.products .product:hover {
+  background-color: #66666610;
+}
+.products .product img {
+  width: 350px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.products .product h4 {
+  color: #2c2c2c;
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: #2c2c2c83 2px 2px 5px;
+}
+
+.products .product p {
+  color: #2c2c2c;
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  text-align: center;
+}
+
+/* =============== PRODUCTS END =============== */
+
+/* =============== FOOTER START =============== */
+.footer {
+  height: 50vh;
+  background-color: #2c2c2c;
+}
+.footer .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-top-card {
+  width: 25%;
+  padding: 50px;
+  color: #cdcecf;
+  position: relative;
+  height: 35vh;
+}
+.footer .bottom {
+  height: 7vh;
+  background-color: black;
+  text-align: center;
+  color: #74a4c5;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+}
+.footer .bottom a {
+  text-decoration: none;
+  color: #74a4c5;
+}
+.footer .bottom i,
+.center i {
+  color: #9c7841;
+  font-size: 20px;
+  margin: 0px 5px;
+}
+.center h3,
+.right h3 {
+  margin: 40px 0px;
+  font-weight: bolder;
+  border-bottom: 1px solid #d6d7d8;
+}
+.center label {
+  display: block;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+
+.left h3 {
+  font-size: 46px;
+  font-family: "Norican", cursive;
+  transform: rotate(-15deg);
+  position: initial;
+  margin-bottom: 50px;
+}
+.right .footer-top-card {
+  margin-bottom: auto;
+}
+
+.left p {
+  margin: 50px 0;
+}
+.left span i {
+  color: #9c7841;
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
+.right form {
+  width: 100%;
+  height: 50px;
+  margin: 50px 0;
+}
+.right form input {
+  width: 70%;
+  height: 100%;
+}
+.right form input::placeholder {
+  text-align: center;
+}
+.right form button {
+  width: 27%;
+  height: 54px;
+  margin-left: -5px;
+  background-color: #9c7841;
+  border: none;
+}
+
+.right hr {
+  width: 70%;
+  height: 2px;
+  background-color: #9c7841;
+  border: none;
+  margin: 10px 0;
+}
+.right span label {
+  color: #9c7841;
+}
+/* =============== FOOTER END =============== */
